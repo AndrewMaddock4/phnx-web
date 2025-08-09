@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import Header from "@/components/header";
 
 export default function Home() {
   // Scroll to About Me section with offset for header
@@ -18,23 +18,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-white">
-      {/* Floating Header */}
-      <header className="w-full flex justify-center fixed top-6 left-0 z-50">
-        <nav className="flex gap-8 text-lg font-semibold bg-white/90 px-8 py-3 rounded-full shadow text-black">
-          <Link href="/" className="hover:text-blue-600 transition">
-            About
-          </Link>
-          <Link href="/projects" className="hover:text-blue-600 transition">
-            Projects
-          </Link>
-          <Link href="/blog" className="hover:text-blue-600 transition">
-            Blog
-          </Link>
-          <Link href="/contact" className="hover:text-blue-600 transition">
-            Contact
-          </Link>
-        </nav>
-      </header>
+      <Header />
       {/* Hero Section */}
       <section className="w-screen h-[100vh] flex flex-col justify-center items-center bg-[url(/PHNX.png)] bg-center bg-cover relative overflow-hidden">
         {/* Overlay FIRST, lower z-index */}
