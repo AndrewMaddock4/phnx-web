@@ -7,7 +7,7 @@ function Contact() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4 relative">
       {/* Floating Header */}
       <header className="w-full flex justify-center fixed top-6 left-0 z-50">
-        <nav className="flex gap-8 text-lg font-semibold bg-white/90 px-8 py-3 rounded-full shadow">
+        <nav className="flex gap-8 text-lg font-semibold bg-white/90 px-8 py-3 rounded-full shadow text-black">
           <Link href="/" className="hover:text-blue-600 transition">
             About
           </Link>
