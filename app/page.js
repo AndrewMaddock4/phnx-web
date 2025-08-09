@@ -21,9 +21,7 @@ export default function Home() {
       <Header />
       {/* Hero Section */}
       <section className="w-screen h-[100vh] flex flex-col justify-center items-center bg-[url(/PHNX.png)] bg-center bg-cover relative overflow-hidden">
-        {/* Overlay FIRST, lower z-index */}
         <div className="absolute inset-0 bg-black/40 z-10 pointer-events-none" aria-hidden="true"></div>
-        {/* Hero content ABOVE overlay */}
         <div className="flex flex-col items-center justify-center h-full relative z-20">
           <h1 className="text-white font-bold text-6xl drop-shadow-lg">Phoenix Null</h1>
           <p className="text-white text-xl mt-4 drop-shadow">Software Developer | Tech Enthusiast</p>
@@ -35,7 +33,6 @@ export default function Home() {
           </button>
         </div>
       </section>
-      {/* About Me Section */}
       <section id="about-me" className="w-full max-w-2xl mx-auto mt-12 px-6 py-8 bg-white/90 rounded-xl shadow flex flex-col items-center">
         <h2 className="text-3xl font-bold mb-4 text-gray-900">About Me</h2>
         <p className="text-lg text-gray-700 text-center mb-6">
