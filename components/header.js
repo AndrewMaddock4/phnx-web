@@ -35,7 +35,7 @@ function Header() {
         show ? "translate-y-0" : "-translate-y-32"
       }`}
     >
-      <nav className="flex gap-4 sm:gap-8 text-lg font-semibold bg-white/90 px-4 sm:px-8 py-3 rounded-full shadow-2xl text-black w-full max-w-xs sm:max-w-fit">
+      <nav className="flex justify-center gap-4 sm:gap-8 text-lg font-semibold bg-white/90 px-4 sm:px-8 py-3 rounded-full shadow-2xl text-black w-full max-w-xs sm:max-w-fit">
         <Link href="/" className="hover:text-blue-600 transition">
           About
         </Link>
