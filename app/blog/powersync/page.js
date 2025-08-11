@@ -3,7 +3,12 @@ import Header from "@/components/header";
 import { useEffect, useState } from "react";
 
 function Page() {
-  const [dark, setDark] = useState(window.localStorage.getItem("theme") === "dark");
+  const [dark, setDark] = useState(null);
+
+  useEffect(() => {
+    const savedTheme = window.localStorage.getItem("theme");
+    setDark(savedTheme === "dark");
+  }, []);
 
   useEffect(() => {
     if (dark) {

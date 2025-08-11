@@ -16,10 +16,21 @@ const posts = [
     excerpt: "Looking at creating a web app that works offline and online seamlessly.",
     date: "2025-08-09",
   },
+  {
+    slug: "go-errors",
+    title: "Go Error Handling is Good, Actually",
+    excerpt: "A deep dive into Go's error handling philosophy and its benefits.",
+    date: "2025-08-08",
+  },
 ];
 
 function Blog() {
-  const [dark, setDark] = useState(window.localStorage.getItem("theme") === "dark");
+  const [dark, setDark] = useState(null);
+
+  useEffect(() => {
+    const savedTheme = window.localStorage.getItem("theme");
+    setDark(savedTheme === "dark");
+  }, []);
 
   useEffect(() => {
     if (dark) {

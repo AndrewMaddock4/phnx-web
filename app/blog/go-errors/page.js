@@ -27,7 +27,7 @@ function Page() {
         id="about-me"
         className=" w-11/12 max-w-2xl mx-auto mt-24 px-6 py-8 bg-white/90 dark:bg-gray-900/90 z-30 rounded-xl shadow flex flex-col items-center"
       >
-        <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Cyborgs, Technology, and The Future</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Go Error Handling is Good, Actually</h2>
         <p className="text-lg text-gray-700 dark:text-gray-200 mb-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
