@@ -12,6 +12,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    if (dark === null) return; // Avoid running this effect on initial render
     if (dark) {
       document.documentElement.classList.add("dark");
       window.localStorage.setItem("theme", "dark");

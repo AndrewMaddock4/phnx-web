@@ -46,7 +46,7 @@ function Header({ dark, setDark }) {
     <>
       {/* Mobile sidebar button */}
       <button
-        className={`fixed top-6 left-4 z-[100] aspect-square w-12 sm:hidden bg-white/90 dark:bg-gray-800/90 rounded-full p-2 shadow transition-transform duration-300 ${
+        className={`fixed top-6 left-4 z-[100] aspect-square w-12 sm:hidden bg-white/90 dark:bg-gray-900/90 rounded-full p-2 shadow transition-transform duration-300 ${
           !sidebarOpen ? "translate-x-0" : "-translate-x-32"
         }`}
         aria-label="Open menu"

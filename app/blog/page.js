@@ -33,6 +33,8 @@ function Blog() {
   }, []);
 
   useEffect(() => {
+    if (dark === null) return;
+
     if (dark) {
       document.documentElement.classList.add("dark");
       window.localStorage.setItem("theme", "dark");
