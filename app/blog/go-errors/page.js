@@ -76,22 +76,22 @@ try {
         <StyledCodeBlock
           code={`//...
 try {
-    const content = ReadFileSync('path/to/your/file.json', 'utf8');
+    const content = ReadFileSync("path/to/your/file.json", "utf8");
     const object = JSON.parse(content);
 
-    object.existingProperty.push('newVal');
+    object.existingProperty.push("newVal");
     
-    WriteFileSync('path/to/your/file.js', modifiedContent, 'utf8');
+    WriteFileSync("path/to/your/file.js", modifiedContent, "utf8");
     }
 catch (error) {
-    console.error('Error reading or writing file:', error);
+    console.error("Error reading or writing file:", error);
 }`}
           language="javascript"
         />
         <p className="text-lg text-gray-700 dark:text-gray-200 mb-6">
           If an error occurs, which line caused it? I don&apos;t know! Every one of those lines could throw an exception, and the only way to know is
-          to read the details of the error message and find it. It's fine in a simple example like this, but as codebases grow so do the available
-          places for exceptions. Do you really want to spend more time locating your bug than fixing it?
+          to read the details of the error message and find it. It&apos;s fine in a simple example like this, but as codebases grow so do the
+          available places for exceptions. Do you really want to spend more time locating your bug than fixing it?
         </p>
         <p className="text-lg text-gray-700 dark:text-gray-200">Compare this to how Golang does it:</p>
         <StyledCodeBlock
