@@ -5,6 +5,12 @@ import { useEffect, useState } from "react";
 
 const posts = [
   {
+    slug: "go-errors",
+    title: "Go Error Handling is Good, Actually",
+    excerpt: "A deep dive into Go's error handling philosophy and its benefits.",
+    date: "2025-08-19",
+  },
+  {
     slug: "cyborg",
     title: "Cyborgs, Technology, and The Future",
     excerpt: "An exploration of humanity & technology in the modern world.",
@@ -15,12 +21,6 @@ const posts = [
     title: "PowerSync: Creating Apps for Users Anywhere",
     excerpt: "Looking at creating a web app that works offline and online seamlessly.",
     date: "2025-08-09",
-  },
-  {
-    slug: "go-errors",
-    title: "Go Error Handling is Good, Actually",
-    excerpt: "A deep dive into Go's error handling philosophy and its benefits.",
-    date: "2025-08-08",
   },
 ];
 
